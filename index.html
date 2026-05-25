@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akiniyi Emmanuel — Cybersecurity & AI</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- GLITCH OVERLAY -->
+  <div class="glitch-overlay" id="glitchOverlay"></div>
+
+  <!-- PAGE TRANSITION -->
+  <div class="page-transition" id="pageTransition">
+    <div class="transition-text">LOADING<span class="blink">_</span></div>
+    <div class="transition-bar"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">[</span>AE<span class="logo-bracket">]</span>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="#hero" class="nav-link" data-page="0">HOME</a>
+      <a href="#about" class="nav-link" data-page="1">ABOUT</a>
+      <a href="#skills" class="nav-link" data-page="2">SKILLS</a>
+      <a href="#projects" class="nav-link" data-page="3">PROJECTS</a>
+      <a href="#education" class="nav-link" data-page="4">EDUCATION</a>
+      <a href="#goals" class="nav-link" data-page="5">GOALS</a>
+      <a href="#contact" class="nav-link" data-page="6">CONTACT</a>
+    </div>
+    <div class="nav-status">
+      <span class="status-dot"></span>
+      <span class="status-text">ONLINE</span>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- SIDE SCAN LINE -->
+  <div class="scan-line"></div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- PAGE 0: HERO -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="page active" id="hero" data-page="0">
+    <canvas class="hero-canvas" id="heroCanvas"></canvas>
+    <div class="hero-grid-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="tag-line"></span>
+        <span>INITIALIZING SYSTEM</span>
+        <span class="tag-line"></span>
+      </div>
+
+      <h1 class="hero-name" id="heroName">
+        <span class="name-glitch" data-text="AKINIYI">AKINIYI</span>
+        <span class="name-glitch name-last" data-text="EMMANUEL">EMMANUEL</span>
+      </h1>
+
+      <div class="hero-subtitle">
+        <span class="subtitle-prefix">&gt;&gt;</span>
+        <span class="typing-text" id="typingText"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+
+      <div class="hero-terminal">
+        <div class="terminal-header">
+          <span class="term-dot red"></span>
+          <span class="term-dot yellow"></span>
+          <span class="term-dot green"></span>
+          <span class="term-title">system_init.sh</span>
+        </div>
+        <div class="terminal-body">
+          <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">whoami</span></div>
+          <div class="term-line term-output">akiniyi_emmanuel // CS_undergraduate</div>
+          <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">status --check</span></div>
+          <div class="term-line term-output"><span class="term-green">✓</span> Learning cybersecurity daily</div>
+          <div class="term-line term-output"><span class="term-green">✓</span> Building AI-powered tools</div>
+          <div class="term-line term-output"><span class="term-green">✓</span> Exploring Web3 frontiers</div>
+          <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd blink-cmd">_</span></div>
+        </div>
+      </div>
+
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary" id="contactBtn">
+          <span class="btn-glow"></span>
+          <i class="fas fa-satellite-dish"></i>
+          CONTACT ME
+        </a>
+        <a href="#about" class="btn btn-secondary">
+          <i class="fas fa-chevron-down"></i>
+          EXPLORE
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-num" data-val="3">0</span>
+        <span class="stat-label">YEARS CODING</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-val="8">0</span>
+        <span class="stat-label">TECH SKILLS</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-val="4">0</span>
+        <span class="stat-label">PROJECTS</span>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>SCROLL OR NAVIGATE</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- PAGE 1: ABOUT -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="page" id="about" data-page="1">
+    <div class="page-bg-pattern"></div>
+    <div class="section-header">
+      <div class="section-num">01</div>
+      <h2 class="section-title">ABOUT<span class="title-accent">_ME</span></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="about-container">
+      <div class="about-visual">
+        <div class="avatar-frame">
+          <div class="avatar-hex">
+            <div class="hex-inner">
+              <div class="avatar-icon">
+                <i class="fas fa-user-shield"></i>
+              </div>
+            </div>
+          </div>
+          <div class="avatar-ring ring-1"></div>
+          <div class="avatar-ring ring-2"></div>
+          <div class="avatar-ring ring-3"></div>
+          <div class="avatar-data">
+            <div class="data-point" style="--angle:0deg"><span>AI</span></div>
+            <div class="data-point" style="--angle:60deg"><span>SEC</span></div>
+            <div class="data-point" style="--angle:120deg"><span>WEB3</span></div>
+            <div class="data-point" style="--angle:180deg"><span>DEV</span></div>
+            <div class="data-point" style="--angle:240deg"><span>CS</span></div>
+            <div class="data-point" style="--angle:300deg"><span>CLOUD</span></div>
+          </div>
+        </div>
+
+        <div class="about-badges">
+          <div class="badge"><i class="fas fa-shield-halved"></i> Ethical Hacking</div>
+          <div class="badge"><i class="fab fa-python"></i> Python</div>
+          <div class="badge"><i class="fas fa-robot"></i> AI Tools</div>
+          <div class="badge"><i class="fas fa-gamepad"></i> Gaming</div>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <div class="about-card glass-card">
+          <div class="card-accent"></div>
+          <p class="about-intro">// SYSTEM_PROFILE.json</p>
+          <h3 class="about-name">Akiniyi Emmanuel</h3>
+          <p class="about-bio">
+            I'm a Nigerian computer science undergraduate on a mission to become a
+            world-class <span class="highlight">cybersecurity professional</span> and
+            <span class="highlight">AI builder</span>. My journey started with curiosity —
+            I wanted to understand how the digital world worked beneath the surface.
+          </p>
+          <p class="about-bio">
+            Today, I'm diving deep into <span class="highlight">ethical hacking</span>,
+            cloud computing, and AI prompt engineering. I build web tools, explore
+            <span class="highlight">Web3</span> systems, and study the intersection of
+            artificial intelligence and security.
+          </p>
+          <p class="about-bio">
+            Outside of tech, I'm a passionate gamer — gaming taught me strategy, patience,
+            and the drive to <span class="highlight">never stop leveling up</span>.
+          </p>
+
+          <div class="about-facts">
+            <div class="fact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Nigeria 🇳🇬</span>
+            </div>
+            <div class="fact-item">
+              <i class="fas fa-graduation-cap"></i>
+              <span>CS Undergraduate</span>
+            </div>
+            <div class="fact-item">
+              <i class="fas fa-code"></i>
+              <span>Developer & AI Prompter</span>
+            </div>
+            <div class="fact-item">
+              <i class="fas fa-eye"></i>
+              <span>Cybersecurity Learner</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- PAGE 2: SKILLS -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="page" id="skills" data-page="2">
+    <div class="page-bg-pattern"></div>
+    <div class="section-header">
+      <div class="section-num">02</div>
+      <h2 class="section-title">SKILL<span class="title-accent">_SET</span></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="skills-grid">
+
+      <div class="skill-card glass-card" data-skill="HTML" data-level="85">
+        <div class="skill-glow"></div>
+        <div class="skill-icon-wrap">
+          <i class="fab fa-html5 skill-icon"></i>
+        </div>
+        <h3 class="skill-name">HTML5</h3>
+        <p class="skill-desc">Semantic markup, accessibility, modern web structure</p>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          <span class="skill-pct">85%</span>
+        </div>
+        <div class="skill-tags"><span>Semantic</span><span>Accessible</span></div>
+      </div>
+
+      <div class="skill-card glass-card" data-skill="CSS" data-level="80">
+        <div class="skill-glow"></div>
+        <div class="skill-icon-wrap">
+          <i class="fab fa-css3-alt skill-icon"></i>
+        </div>
+        <h3 class="skill-name">CSS3</h3>
+        <p class="skill-desc">Animations, Flexbox, Grid, responsive design</p>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+          <span class="skill-pct">80%</span>
+        </div>
+        <div class="skill-tags"><span>Animations</span><span>Responsive</span></div>
+      </div>
+
+      <div class="skill-card glass-card" data-skill="JS" data-level="75">
+        <div class="skill-glow"></div>
+        <div class="skill-icon-wrap">
+          <i class="fab fa-js skill-icon"></i>
+        </div>
+        <h3 class="skill-name">JavaScript</h3>
+        <p class="skill-desc">DOM manipulation, APIs, async programming</p>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+          <span class="skill-pct">75%</span>
+        </div>
+        <div class="skill-tags"><span>ES6+</span><span>APIs</span></div>
+      </div>
+
+      <div class="skill-card glass-card" data-skill="GIT" data-level="70">
+        <div class="skill-glow"></div>
+        <div class="skill-icon-wrap">
+          <i class="fab fa-github skill-icon"></i>
+        </div>
+        <h3 class="skill-name">GitHub</h3>
+        <p class="skill-desc">Version control, repositories, collaboration</p>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+          <span class="skill-pct">70%</span>
+        </div>
+        <div class="skill-tags"><span>Git</span><span>Collab</span></div>
+      </div>
+
+      <div class="skill-card glass-card" data-skill="SEC" data-level="65">
+        <div class="skill-glow"></div>
+        <div class="skill-icon-wrap">
+          <i class="fas fa-shield-halved skill-icon"></i>
+        </div>
+        <h3 class="skill-name">Cybersecurity</h3>
+        <p class="skill-desc">Network security, ethical hacking fundamentals</p>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+          <span class="skill-pct">65%</span>
+        </div>
+        <div class="skill-tags"><span>Learning</span><span>Ethical Hack</span></div>
+      </div>
+
+      <div class="skill-card glass-card" data-skill="CLOUD" data-level="55">
+        <div class="skill-glow"></div>
+        <div class="skill-icon-wrap">
+          <i class="fas fa-cloud skill-icon"></i>
+        </div>
+        <h3 class="skill-name">Cloud Computing</h3>
+        <p class="skill-desc">Cloud fundamentals, infrastructure concepts</p>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
+          <span class="skill-pct">55%</span>
+        </div>
+        <div class="skill-tags"><span>AWS</span><span>Exploring</span></div>
+      </div>
+
+      <div class="skill-card glass-card" data-skill="AI" data-level="78">
+        <div class="skill-glow"></div>
+        <div class="skill-icon-wrap">
+          <i class="fas fa-robot skill-icon"></i>
+        </div>
+        <h3 class="skill-name">AI Tools</h3>
+        <p class="skill-desc">Prompt engineering, LLMs, AI-assisted workflows</p>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+          <span class="skill-pct">78%</span>
+        </div>
+        <div class="skill-tags"><span>Prompting</span><span>LLMs</span></div>
+      </div>
+
+      <div class="skill-card glass-card" data-skill="PS" data-level="90">
+        <div class="skill-glow"></div>
+        <div class="skill-icon-wrap">
+          <i class="fas fa-brain skill-icon"></i>
+        </div>
+        <h3 class="skill-name">Problem Solving</h3>
+        <p class="skill-desc">Analytical thinking, logic, creative solutions</p>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+          <span class="skill-pct">90%</span>
+        </div>
+        <div class="skill-tags"><span>Logic</span><span>Analysis</span></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- PAGE 3: PROJECTS -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="page" id="projects" data-page="3">
+    <div class="page-bg-pattern"></div>
+    <div class="section-header">
+      <div class="section-num">03</div>
+      <h2 class="section-title">PROJECT<span class="title-accent">_LAB</span></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card glass-card">
+        <div class="project-header">
+          <div class="project-category">WEB DEV</div>
+          <div class="project-status active-status">LIVE</div>
+        </div>
+        <div class="project-icon-wrap">
+          <i class="fas fa-globe project-icon"></i>
+          <div class="project-icon-glow"></div>
+        </div>
+        <h3 class="project-title">Portfolio Website</h3>
+        <p class="project-desc">
+          A futuristic, cyberpunk-themed personal portfolio built with vanilla HTML,
+          CSS & JS. Features animated particles, 3D transitions, glassmorphism and
+          a terminal-style UI — fully responsive across all devices.
+        </p>
+        <div class="project-tech">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+        <div class="project-actions">
+          <a href="https://github.com/akiniyiemmanuel5-stack" target="_blank" class="btn-project primary-btn">
+            <i class="fas fa-external-link-alt"></i> Demo
+          </a>
+          <a href="https://github.com/akiniyiemmanuel5-stack" target="_blank" class="btn-project ghost-btn">
+            <i class="fab fa-github"></i> Code
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card glass-card">
+        <div class="project-header">
+          <div class="project-category">AI</div>
+          <div class="project-status building-status">BUILDING</div>
+        </div>
+        <div class="project-icon-wrap">
+          <i class="fas fa-robot project-icon"></i>
+          <div class="project-icon-glow"></div>
+        </div>
+        <h3 class="project-title">AI Projects</h3>
+        <p class="project-desc">
+          Collection of AI-assisted projects using prompt engineering and LLM APIs.
+          Includes chatbots, content generators, and automation scripts powered by
+          modern AI tools. Exploring the frontier of human-AI collaboration.
+        </p>
+        <div class="project-tech">
+          <span>Python</span><span>LLM APIs</span><span>Prompting</span>
+        </div>
+        <div class="project-actions">
+          <a href="https://github.com/akiniyiemmanuel5-stack" target="_blank" class="btn-project primary-btn">
+            <i class="fas fa-external-link-alt"></i> Demo
+          </a>
+          <a href="https://github.com/akiniyiemmanuel5-stack" target="_blank" class="btn-project ghost-btn">
+            <i class="fab fa-github"></i> Code
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card glass-card">
+        <div class="project-header">
+          <div class="project-category">WEB3</div>
+          <div class="project-status research-status">RESEARCH</div>
+        </div>
+        <div class="project-icon-wrap">
+          <i class="fas fa-link project-icon"></i>
+          <div class="project-icon-glow"></div>
+        </div>
+        <h3 class="project-title">Web3 Research</h3>
+        <p class="project-desc">
+          Deep-dive research into blockchain technology, decentralized systems,
+          smart contracts, and the intersection of Web3 and cybersecurity.
+          Building foundational knowledge for the decentralized future.
+        </p>
+        <div class="project-tech">
+          <span>Blockchain</span><span>DeFi</span><span>Smart Contracts</span>
+        </div>
+        <div class="project-actions">
+          <a href="https://github.com/akiniyiemmanuel5-stack" target="_blank" class="btn-project primary-btn">
+            <i class="fas fa-external-link-alt"></i> Demo
+          </a>
+          <a href="https://github.com/akiniyiemmanuel5-stack" target="_blank" class="btn-project ghost-btn">
+            <i class="fab fa-github"></i> Code
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card glass-card">
+        <div class="project-header">
+          <div class="project-category">GAMING</div>
+          <div class="project-status active-status">ACTIVE</div>
+        </div>
+        <div class="project-icon-wrap">
+          <i class="fas fa-gamepad project-icon"></i>
+          <div class="project-icon-glow"></div>
+        </div>
+        <h3 class="project-title">Gaming Content</h3>
+        <p class="project-desc">
+          Creating gaming content and building a community around strategic gameplay,
+          tech gaming culture, and esports commentary. Bridging the gap between
+          gaming passion and technology expertise.
+        </p>
+        <div class="project-tech">
+          <span>TikTok</span><span>Content</span><span>Community</span>
+        </div>
+        <div class="project-actions">
+          <a href="https://www.tiktok.com/@bundobiggie" target="_blank" class="btn-project primary-btn">
+            <i class="fas fa-external-link-alt"></i> Demo
+          </a>
+          <a href="https://github.com/akiniyiemmanuel5-stack" target="_blank" class="btn-project ghost-btn">
+            <i class="fab fa-github"></i> Code
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- PAGE 4: EDUCATION -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="page" id="education" data-page="4">
+    <div class="page-bg-pattern"></div>
+    <div class="section-header">
+      <div class="section-num">04</div>
+      <h2 class="section-title">EDUCA<span class="title-accent">_TION</span></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="education-container">
+      <div class="edu-main glass-card">
+        <div class="edu-icon-wrap">
+          <i class="fas fa-graduation-cap edu-icon"></i>
+          <div class="edu-icon-ring"></div>
+        </div>
+        <div class="edu-body">
+          <div class="edu-badge">CURRENT</div>
+          <h3 class="edu-degree">B.Sc. Computer Science</h3>
+          <p class="edu-school">Nigerian University — Undergraduate Program</p>
+          <p class="edu-desc">
+            Pursuing a Bachelor's degree in Computer Science with a focus on
+            software engineering, algorithms, data structures, and emerging technologies.
+            Specializing in AI systems and cybersecurity as elective tracks.
+          </p>
+          <div class="edu-modules">
+            <div class="module"><i class="fas fa-check"></i> Data Structures & Algorithms</div>
+            <div class="module"><i class="fas fa-check"></i> Network Security Fundamentals</div>
+            <div class="module"><i class="fas fa-check"></i> Software Engineering</div>
+            <div class="module"><i class="fas fa-check"></i> Database Systems</div>
+            <div class="module"><i class="fas fa-check"></i> Operating Systems</div>
+            <div class="module"><i class="fas fa-check"></i> Computer Architecture</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="edu-extras">
+        <div class="edu-extra-card glass-card">
+          <i class="fas fa-robot"></i>
+          <h4>AI & Machine Learning</h4>
+          <p>Self-taught prompt engineering, LLM APIs, and AI workflow automation through online platforms and research</p>
+        </div>
+        <div class="edu-extra-card glass-card">
+          <i class="fas fa-shield-halved"></i>
+          <h4>Cybersecurity</h4>
+          <p>Active learner on platforms like TryHackMe exploring ethical hacking, network defense, and penetration testing</p>
+        </div>
+        <div class="edu-extra-card glass-card">
+          <i class="fas fa-cloud"></i>
+          <h4>Cloud Computing</h4>
+          <p>Exploring AWS and cloud infrastructure fundamentals, preparing for cloud certifications in the near future</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- PAGE 5: GOALS -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="page" id="goals" data-page="5">
+    <div class="page-bg-pattern"></div>
+    <div class="section-header">
+      <div class="section-num">05</div>
+      <h2 class="section-title">MISSION<span class="title-accent">_LOG</span></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="goals-container">
+      <div class="goals-timeline">
+
+        <div class="goal-node">
+          <div class="node-connector"></div>
+          <div class="node-dot">
+            <i class="fas fa-shield-halved"></i>
+          </div>
+          <div class="goal-card glass-card">
+            <div class="goal-phase">PHASE 01</div>
+            <h3 class="goal-title">Cybersecurity Professional</h3>
+            <p class="goal-desc">
+              Become a certified cybersecurity expert — mastering ethical hacking,
+              penetration testing, network defense, and digital forensics. Target:
+              CEH, CompTIA Security+ certifications.
+            </p>
+            <div class="goal-status in-progress">IN PROGRESS</div>
+          </div>
+        </div>
+
+        <div class="goal-node">
+          <div class="node-connector"></div>
+          <div class="node-dot">
+            <i class="fas fa-cloud"></i>
+          </div>
+          <div class="goal-card glass-card">
+            <div class="goal-phase">PHASE 02</div>
+            <h3 class="goal-title">Cloud Engineering</h3>
+            <p class="goal-desc">
+              Learn cloud infrastructure deeply — AWS, Azure, or GCP. Build scalable,
+              secure cloud solutions and work towards AWS Solutions Architect certification.
+            </p>
+            <div class="goal-status planned">PLANNED</div>
+          </div>
+        </div>
+
+        <div class="goal-node">
+          <div class="node-connector"></div>
+          <div class="node-dot">
+            <i class="fas fa-robot"></i>
+          </div>
+          <div class="goal-card glass-card">
+            <div class="goal-phase">PHASE 03</div>
+            <h3 class="goal-title">AI-Powered Software</h3>
+            <p class="goal-desc">
+              Build production-grade AI applications — intelligent tools that solve
+              real problems for real people. Merge AI with cybersecurity for
+              next-generation defense systems.
+            </p>
+            <div class="goal-status planned">PLANNED</div>
+          </div>
+        </div>
+
+        <div class="goal-node">
+          <div class="node-connector"></div>
+          <div class="node-dot">
+            <i class="fas fa-microchip"></i>
+          </div>
+          <div class="goal-card glass-card">
+            <div class="goal-phase">PHASE 04</div>
+            <h3 class="goal-title">Useful Tech Products</h3>
+            <p class="goal-desc">
+              Create tech products with real-world impact — SaaS tools, security
+              platforms, and AI utilities that help Africans and the world navigate
+              the digital era safely.
+            </p>
+            <div class="goal-status future">FUTURE</div>
+          </div>
+        </div>
+
+        <div class="goal-node">
+          <div class="node-connector last-connector"></div>
+          <div class="node-dot">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <div class="goal-card glass-card">
+            <div class="goal-phase">PHASE 05</div>
+            <h3 class="goal-title">Grow a Tech Brand</h3>
+            <p class="goal-desc">
+              Build a recognizable personal brand in the African tech space — mentoring
+              the next generation, building a community, and proving that extraordinary
+              things come from Nigeria.
+            </p>
+            <div class="goal-status future">FUTURE</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- PAGE 6: CONTACT -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="page" id="contact" data-page="6">
+    <div class="page-bg-pattern"></div>
+    <div class="section-header">
+      <div class="section-num">06</div>
+      <h2 class="section-title">CONTACT<span class="title-accent">_TX</span></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="contact-container">
+      <div class="contact-left">
+        <div class="contact-intro glass-card">
+          <div class="signal-icon">
+            <i class="fas fa-satellite-dish"></i>
+            <div class="signal-ring s1"></div>
+            <div class="signal-ring s2"></div>
+            <div class="signal-ring s3"></div>
+          </div>
+          <h3>Open for Connection</h3>
+          <p>Got a project, opportunity, or just want to talk tech? Drop me a message. I respond fast.</p>
+        </div>
+
+        <div class="contact-links">
+          <a href="https://wa.me/2349123851877" target="_blank" class="contact-link glass-card">
+            <div class="link-icon whatsapp-icon"><i class="fab fa-whatsapp"></i></div>
+            <div class="link-body">
+              <span class="link-label">WhatsApp</span>
+              <span class="link-val">+234 912 385 1877</span>
+            </div>
+            <i class="fas fa-arrow-right link-arrow"></i>
+          </a>
+
+          <a href="mailto:akiniyiemmanuel5@gmail.com" class="contact-link glass-card">
+            <div class="link-icon gmail-icon"><i class="fas fa-envelope"></i></div>
+            <div class="link-body">
+              <span class="link-label">Gmail</span>
+              <span class="link-val">akiniyiemmanuel5@gmail.com</span>
+            </div>
+            <i class="fas fa-arrow-right link-arrow"></i>
+          </a>
+
+          <a href="https://github.com/akiniyiemmanuel5-stack" target="_blank" class="contact-link glass-card">
+            <div class="link-icon github-icon"><i class="fab fa-github"></i></div>
+            <div class="link-body">
+              <span class="link-label">GitHub</span>
+              <span class="link-val">akiniyiemmanuel5-stack</span>
+            </div>
+            <i class="fas fa-arrow-right link-arrow"></i>
+          </a>
+
+          <a href="https://www.tiktok.com/@bundobiggie" target="_blank" class="contact-link glass-card">
+            <div class="link-icon tiktok-icon"><i class="fab fa-tiktok"></i></div>
+            <div class="link-body">
+              <span class="link-label">TikTok</span>
+              <span class="link-val">@bundobiggie</span>
+            </div>
+            <i class="fas fa-arrow-right link-arrow"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/akiniyi-emmanuel-b63306314" target="_blank" class="contact-link glass-card">
+            <div class="link-icon linkedin-icon"><i class="fab fa-linkedin-in"></i></div>
+            <div class="link-body">
+              <span class="link-label">LinkedIn</span>
+              <span class="link-val">Akiniyi Emmanuel</span>
+            </div>
+            <i class="fas fa-arrow-right link-arrow"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-right">
+        <div class="contact-form glass-card">
+          <div class="form-header">
+            <span class="form-title">// SEND_MESSAGE</span>
+            <span class="form-status"><span class="status-dot green-dot"></span> SECURE</span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">NAME</label>
+            <input type="text" class="form-input" id="formName" placeholder="Your full name" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">EMAIL</label>
+            <input type="email" class="form-input" id="formEmail" placeholder="your@email.com" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">SUBJECT</label>
+            <input type="text" class="form-input" id="formSubject" placeholder="What's this about?" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">MESSAGE</label>
+            <textarea class="form-input form-textarea" id="formMessage" placeholder="Write your message here..."></textarea>
+          </div>
+
+          <button class="btn-send" id="sendBtn" onclick="handleFormSubmit()">
+            <span class="send-glow"></span>
+            <i class="fas fa-paper-plane"></i>
+            TRANSMIT MESSAGE
+          </button>
+
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-check-circle"></i>
+            Message received. I'll reply soon!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-line"></div>
+      <div class="footer-content">
+        <div class="footer-logo">AE<span class="footer-logo-accent">_</span></div>
+        <div class="footer-quote">
+          <i class="fas fa-quote-left"></i>
+          The best way to predict the future is to build it.
+          <i class="fas fa-quote-right"></i>
+        </div>
+        <div class="footer-copy">© 2025 Akiniyi Emmanuel. Built with code & ambition.</div>
+      </div>
+    </footer>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
